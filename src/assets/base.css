@@ -1,0 +1,50 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--fonte-texto);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--cor-tinta);
+  background-color: var(--cor-fundo);
+  /* caderno quadriculado desenhado só com CSS */
+  background-image:
+    linear-gradient(var(--cor-grade) 1px, transparent 1px),
+    linear-gradient(90deg, var(--cor-grade) 1px, transparent 1px);
+  background-size: 1.5rem 1.5rem;
+  overflow-x: hidden; /* rede de segurança: nada de rolagem horizontal */
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  line-height: 1.15;
+  margin: 0 0 var(--espaco-2);
+}
+h1 { font-size: 2rem; }
+h2 { font-size: 1.375rem; }
+
+p { margin: 0 0 var(--espaco-2); }
+img { max-width: 100%; height: auto; }
+a { color: var(--cor-azul); overflow-wrap: anywhere; }
+code { font-family: var(--fonte-codigo); font-size: 0.9em; }
+
+:focus-visible { outline: 3px solid var(--cor-azul); outline-offset: 2px; }
+
+/* aviso de parte que a dupla ainda precisa escrever */
+.pendente {
+  padding: var(--espaco-2);
+  border: 2px dashed var(--cor-cota);
+  background: var(--cor-superficie);
+  color: var(--cor-tinta-suave);
+}
+
+@media (min-width: 48em) {
+  h1 { font-size: 2.75rem; }
+  h2 { font-size: 1.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

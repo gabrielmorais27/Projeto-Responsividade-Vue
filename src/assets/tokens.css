@@ -1,0 +1,26 @@
+/* Design tokens: todas as cores e espaços do projeto vivem aqui */
+:root {
+  /* cores */
+  --cor-fundo: #eef2ee;
+  --cor-grade: #d3ddd5;
+  --cor-tinta: #16243a;
+  --cor-tinta-suave: #3b4a63;
+  --cor-marca: #ffd23f;
+  --cor-cota: #d62f4b;
+  --cor-azul: #2347d6;
+  --cor-superficie: #ffffff;
+
+  /* espaçamentos (rem: acompanham a fonte configurada pela pessoa) */
+  --espaco-1: 0.5rem;
+  --espaco-2: 1rem;
+  --espaco-3: 1.5rem;
+  --espaco-4: 2.5rem;
+  --espaco-5: 4rem;
+
+  /* tipografia */
+  --fonte-titulo: 'Bricolage Grotesque Variable', 'Arial Narrow', sans-serif;
+  --fonte-texto: 'Atkinson Hyperlegible', system-ui, sans-serif;
+  --fonte-codigo: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --largura-texto: 44rem;
+}
